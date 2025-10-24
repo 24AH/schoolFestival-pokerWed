@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポーカールール</title>
+    <link rel="stylesheet" href="css/Poker.css">
+    <link rel="icon" href="img/tranplogo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Kosugi+Maru&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Kosugi+Maru&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu" id="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="menu-content" id="menu-content">
+        <a href="CareerPoker.html">大富豪のルールへ</a>
+    </div>
+
+    <button id="toTopBtn">▲</button>
+
+    <div class="green-section">
+
+        <h1 class="maintitle">ポーカーのルール</h1>
+
+        <div class="frame1">
+            <div class="title">
+                <h2><span><img src="./img/tranplogo.png" alt="トランプロゴ"></span>基本ルール</h2>
+            </div>
+            <div class="textarea">
+                <p class="mini-title">基本ルール</p>
+                <ol>
+                    <li>参加費一枚を払わせ、各プレイヤーに2枚ずつ配ります。
+                        ディーラーの前にカード3枚表向きに置き、場の3枚と自分の2枚のカードを合わせ、賭けるか降りるか決める。</li>
+                    <li>プレイヤーが2人以上残っている場合、ディーラーの前に1枚オープンして、場の4枚と自分の2枚のカードを合わせ、賭けるか降りるか決める。<br>
+                        プレイヤーが1人になった場合、その時点で場に出てるチップはその人の物となる。</li>
+                    <li>プレイヤーが2人以上残っている場合、ディーラーの前に1枚オープンして、場の5枚と自分の2枚のカードを合わせ、賭けるか降りるか決める。<br>
+                        プレイヤーが1人になった場合、その時点で場に出てるチップはその人の物となる。</li>
+                    <li>残っている参加者が場の5枚と手持ちの2枚、計7枚のうち5枚を使って役を作り勝負。勝者はそれまでに賭けられたチップを全て獲得する。</li>
+                    <li>上記を10分間行い、一番多くチップを持っていた上位2名が決勝に行く。</li>
+                </ol>
+                <p class="mini-title">賭けるか降りるかの時にする行動一覧</p>
+                <li>チェック：ベットせずに順番をパス。そのラウンドでまだ誰もベットをしていない場合のみ可能</li>
+                <li>コール：前の人がベットした額と同じチップを支払う</li>
+                <li>レイズ：前の人のベット額に上乗せして賭ける</li>
+                <li>フォールド：手札を放棄してそのラウンドから降りる</li>
+            </div>
+        </div>
+
+        <div class="frame2">
+            <div class="title">
+                <h2><span><img src="./img/tranplogo.png" alt="トランプロゴ"></span>ポーカーの役</h2>
+            </div>
+            <div class="textarea">
+                <!-- <h3>1.ハイカード</h3>
+                <img src="./img/High.jpg" alt="ハイカードイメージ">
+                <p>役が揃っていない、役なしの状態。</p> -->
+                <h3>1.ワンペア</h3>
+                <img src="./img/Onep.jpg" alt="ワンペアイメージ">
+                <p>同じ数字が2枚ある役。</p>
+                <h3>2.ツーペア</h3>
+                <img src="./img/Twop.jpg" alt="ツーペアイメージ">
+                <p>同じ数字が2枚の組み合わせが2組あること</p>
+                <h3>3.スリーカード</h3>
+                <img src="./img/Threep.jpg" alt="スリーカードイメージ">
+                <p>同じ数字が3枚ある役。</p>
+                <h3>4.ストレート</h3>
+                <img src="./img/Str.jpg" alt="ストレートイメージ">
+                <p>柄に関係なく、連続する数字のカードを5枚揃える役。</p>
+                <h3>5.フラッシュ</h3>
+                <img src="./img/Flu.jpg" alt="フラッシュイメージ">
+                <p>数字に関係なく、5枚すべてが同じ柄である役。</p>
+                <h3>6.フルハウス</h3>
+                <img src="./img/Full.jpg" alt="フルハウスイメージ">
+                <p>スリーカードとワンペアの組み合わせの役。</p>
+                <h3>7.フォーカード</h3>
+                <img src="./img/Fourc.jpg" alt="フォーカードイメージ">
+                <p>同じ数字のカード4枚を揃える役。</p>
+                <h3>8.ストレートフラッシュ</h3>
+                <img src="./img/StrFlu.jpg" alt="ストレートフラッシュイメージ">
+                <p>連続する5枚の数字のカードを、同一の柄で揃えている役。</p>
+                <h3>9.ロイヤルストレートフラッシュ</h3>
+                <img src="./img/RoyStrFlu.jpg" alt="ロイヤルストレートフラッシュイメージ">
+                <p>連続する5枚の数字のカードを、同一の柄で揃えるストレートフラッシュの中でも最強の役。</p>
+            </div>
+        </div>
+
+        <div class="frame3">
+            <div class="title">
+                <h2><span><img src="./img/tranplogo.png" alt="トランプロゴ"></span>細かいルール</h2>
+            </div>
+            <div class="textarea">
+                <p class="mini-title">順位が決められなかったとき</p>
+                <li class="textarea-content">順位が決まらなかった人達で山分けする</li>
+                <p class="mini-title">数字の強さ</p>
+                <li class="textarea-content">2→3→4→5→6→7→8→9→10→J→Q→K→A、の順に強くなっていく。</li>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/CareerPoker.js"></script>
+</body>
+
+</html>
